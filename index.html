@@ -1,0 +1,184 @@
+<html>
+<head>
+	<link rel="stylesheet"  href="style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Blog Michelle</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"
+</head>
+
+<body>
+<div><a id='top'/></div>
+ <div><a href="#top" class="idTop"><img class="arrow" src='media/right-arrow.png'></img></a></div>
+<!-- begin: grid-container -->
+<div class="grid-container">
+
+<!-- begin: header -->
+ <div class="grid-item1"><h1>Michelle.</h1>
+	 <div class="items">
+		 <a id="itext">Q & A </a>
+		 <a id="itext"> Blog </a>
+		
+	 <!-- begin: dropdownmenu -->	
+		 <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Recipes</button>
+			 <div class="dropdown-content" id="myDropdown">
+				<a href="#">Pasta</a>
+				<a href="#">Bowls</a>
+				<a href="#">Sushi</a>
+				<a href="#">Ramen</a>
+				<a href="#">Soups</a>
+			</div>
+		</div>
+		<!-- end: dropdownmenu -->
+		 <a id="itext"> About me </a>
+	 </div>
+ </div>
+ <!-- End: header -->
+ <!-- begin: menu -->
+ <div class="grid-item2">
+ 
+ <!-- begin: dropdownmenu -->
+	 <div class="mobdropdown">
+		<button onclick="myFunction2()" class="mobdropbtn">Menu</button>
+		<div id="myDropdown2" class="dropdown-content2">
+			<a href="#">Store</a>
+			<a href="#">Contacts</a>
+			<a href="#">Merch "Puppy"</a>
+			<a href="#">Feedback</a>
+			<a href="#">Top Posts</a>
+		</div>
+	</div>
+<!-- end: dropdownmenu -->
+
+	<div class="cont1">
+		 <ul class="nav">
+				<li> I, Michelle</li>
+				<li> Store</li>
+				<li> Contacts</li>
+				<li> Top Posts</li>
+				<li> Merch "Puppy"</li>	
+				<li> To sponsor</li>	
+		</ul>
+	</div>
+	<div class="cont1">
+		 <ul class="nav">
+				<li> Dobby</li>
+				<li> Store</li>
+				<li> Feedback</li>
+		</ul>		
+	</div>
+ </div>
+ <!-- End: menu -->
+ 
+ <!-- begin: main -->
+ <div class="grid-item3">
+	<div>
+		<h2>Hot summer in Brooklyn, walking with Dobby</h2>
+		<p class="t1">The weather was so good that we decided to take a walk.<br> Dobby was delighted. <br>Tired.</p>
+		<div class="foricon"> 
+		<img class="icons"src="media/instagram.svg"></img>
+		<img class="icons"src="media/youtube.svg"></img>
+		<img class="icons"src="media/facebook.svg"></img>
+		<img class="icons"src="media/twitter.svg"></img>
+		</div>
+		<img id="girl" src="media/girl1.jpg"></img>
+		<h4>Brooklyn. Today is my usual day and I want to share with you . . . . <br>READ MORE  ></h4>
+		<p>Michelle Choi</p>
+		<p class="datetext">22/05/21</p>
+	</div>
+ </div>
+ <!-- End: main -->
+ 
+  <!-- begin: right -->
+ <div class="grid-item4">
+	<div class="wrap1">
+		<img class="round" src="media/profile.jpg">
+		<h5>Michelle Choi</h5>
+		<div>
+		<img class="icons"src="media/instagram.svg"></img>
+		<img class="icons"src="media/youtube.svg"></img>
+		<img class="icons"src="media/facebook.svg"></img>
+		<img class="icons"src="media/twitter.svg"></img>
+		</div>
+		<p class="descrip">Hi!<br> My name is Michelle<br> and I was raised in California,<br> graduated college in Seoul, <br>Korea and now I'm currently based in NYC.<br> Here, I share my experiences<br> on how I'm navigating my 20s through <br>conversations about mental health,<br> wellness, beauty, and life in New York.</p>
+		<p class="datetext">registrated on 25 Juliy, 2019</p>
+	</div>
+	
+	<div id="square"><a id="lpost">latest posts</a></div>
+	
+	<div class="contlate">
+		<img class="latest" src="media/girl1.jpg"></img>
+		<div>
+			<h5>Hot summer in Brooklyn, walking with Dobby</h5>
+			<p class="datetext">7 Juliy, 2020</P>
+		</div>
+	</div>
+	<div class="contlate">
+		<img class="latest" src="media/girl2.jpg"></img>
+		<div>
+			<h5>Birthday dinner with loved ones</h5>
+			<p class="datetext">1 Juliy, 2020</P>
+		</div>
+	</div>
+ </div>
+<!-- End: right -->
+
+<!-- begin: footer -->
+ <div class="grid-item5">
+	<p class="tfooter">All Rignts Reserved (c)<br>Michelle Choi 2021</p>
+ </div>
+ <!-- End: footer -->
+</div>
+<!-- End: grid-container -->
+
+<script type="text/javascript">
+/* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+// Скрытие меню при нажатии клавишей мыши не в области меню
+window.onclick = function(e) {
+	if (!e.target.matches('.dropbtn')) {
+	var myDropdown = document.getElementById("myDropdown");
+		if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+		}
+	}
+}
+</script>
+
+<script>
+/* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+function myFunction2() {
+ document.getElementById("myDropdown2").classList.toggle("show2");
+}
+// Скрытие меню при нажатии клавишей мыши не в области меню
+window.onclick = function(event) {
+if (!event.target.matches('.mobdropbtn')) {
+	var dropdowns = document.getElementsByClassName("dropdown-content2");
+	var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show2')) {
+				openDropdown.classList.remove('show2');
+			}
+		}
+	}
+} 
+
+</script>
+
+</body>
+
+</html>
+
+
+<body>
+<div class="grid-container">
+	<div class="grid-item1">Header</div>
+	<div class="grid-item1">Menu</div>
+	<div class="grid-item1">Main</div>
+	<div class="grid-item1">Right</div>
+	<div class="grid-item1">Footer</div>
+</div>
+</body>
